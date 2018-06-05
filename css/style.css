@@ -1,0 +1,122 @@
+.page {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  background-color: rgb(247, 224, 24);
+}
+
+.logo__image {
+  max-width: 320px;
+  height: auto;
+}
+
+.navigation {
+  background-color: rgb(35, 25, 75);
+}
+
+.navigation__heading {
+  display: block;
+  margin: 32px 0px 16px 0px;
+  padding: 0 32px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(225, 225, 225);
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+}
+
+.navigation__list-item {
+  display: block;
+  padding: 8px 48px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.navigation__list-item:hover {
+  color: rgb(50, 50, 50);
+  background-color: rgb(247, 224, 24);
+}
+
+.navigation__list-item--selected {
+  background-color: rgb(125, 90, 255);
+}
+
+.documentation {
+  margin: 64px 16px;
+  line-height: 32px;
+  color: rgb(50, 50, 50);
+}
+
+.documentation > *:not(:first-child) {
+  margin-top: 64px;
+}
+
+.documentation__title {
+  margin: 0;
+  font-size: 32px;
+  color: rgb(50, 50, 50);
+}
+
+.documentation__article > *:not(:first-child) {
+  margin: 0;
+  margin-top: 16px;
+}
+
+.documentation__inline-code {
+  margin: 0px;
+  padding: 2px 4px;
+  font-family: monospace;
+  font-size: 16px;
+  color: rgb(50, 50, 50);
+  background-color: rgb(247, 224, 24);
+}
+
+.documentation__code {
+  display: block;
+  margin: 0px;
+  padding: 32px;
+  box-shadow: 5px 10px 32px 0px rgba(0, 0, 0, 0.15);
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 15, 50);
+  overflow-x: auto;
+}
+
+.documentation__link {
+  text-decoration: none;
+  color: rgb(125, 90, 255);
+}
+
+.documentation__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 320px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .documentation {
+    margin-left: 352px;
+    max-width: 800px;
+  }
+}
