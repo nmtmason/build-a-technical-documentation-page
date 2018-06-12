@@ -69,11 +69,6 @@
   color: rgb(50, 50, 50);
 }
 
-.documentation__article > *:not(:first-child) {
-  margin: 0;
-  margin-top: 16px;
-}
-
 .documentation__inline-code {
   margin: 0px;
   padding: 2px 4px;
